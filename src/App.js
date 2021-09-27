@@ -1,25 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import Action from './components/ActionBar/ActionBar';
+import Product from './components/ProductView/ProductView'
+import Menu from './components/MenuView/MenuView'
+
+
+
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <Action></Action>
+      <div className="Pedido"> 
+        <Product></Product>
+        <Menu></Menu>
+      </div>
+
+
+
+
+
+
+
     </div>
-  );
+  )
 }
 
 export default App;

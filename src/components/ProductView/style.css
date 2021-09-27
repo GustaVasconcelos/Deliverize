@@ -1,0 +1,132 @@
+*{
+
+    font-family: 'Roboto';
+}
+
+.Principal{
+    overflow: hidden;
+    width: 50%;
+    height: 710px;
+    max-height: 60%;   
+}
+
+
+
+.Burguer img{
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    width: 497px;
+    height: 388px;
+}
+
+.NomeOferta h3{
+    margin-top: 10.41px;
+    width: 528.56px;
+    height: 65.17px;
+    margin-left: 66px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    /* or 28px */
+
+    align-items: center;
+
+    /* Gray darker */
+
+    color: #4E4E4E;
+}
+
+.NomeOferta p{
+    width: 597px;
+    height: 65.17px;
+    margin-left: 66px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 24px */
+    
+    
+    /* Gray darker */
+    
+    color: #4E4E4E;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.preco{
+    display: flex;
+}
+
+.num1{
+    
+    position: static;
+    width: 116px;
+    height: 38px;
+    margin-left: 66px;
+
+
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 120%;
+
+
+    display: flex;
+    align-items: center;
+
+    color: #DC6E05;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.num2{
+    position: static;
+    width: 116px;
+    height: 38px;
+    left: 133px;
+    top: 0px;
+    margin-left: 17px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+
+    /* Gray darker */
+
+    color: #4E4E4E;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+@media screen and (max-width:1980px){
+    .Principal{
+        width: 75%;
+    }
+}
