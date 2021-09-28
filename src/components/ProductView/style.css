@@ -130,3 +130,57 @@
         width: 75%;
     }
 }
+
+@media screen and (max-width:375px) {
+    .Principal{
+        width: 375px;
+        height: 400px;
+        max-height: 600px;
+    }
+    .Burguer img{
+        width: 343px;
+        height: 100%;
+
+    }
+    .NomeOferta h3{
+        margin-top: 10.41px;
+        width: 343px;
+        height: 38px;
+        margin-left: 16px;
+    
+
+        font-size: 18px;
+        line-height: 16px;
+        
+        display: flex;
+        align-items: center;
+    }
+    .NomeOferta p{
+        width: 343px;
+        height: 78px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 16px;
+    }
+    .num1{
+        width: 64px;
+        height: 11px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 16px;
+
+        display: flex;
+        align-items: center;
+    }
+    .num2{
+        width: 64px;
+        height: 11px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 16px;
+
+        display: flex;
+        align-items: center;
+
+    }
+}

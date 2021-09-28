@@ -40,6 +40,11 @@
 .Pedido{
   overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width:375px) {
+  .Pedido{
+    display: inline-block;
+  }
 }

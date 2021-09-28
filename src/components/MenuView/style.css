@@ -1,309 +1,413 @@
+
 .MenuPrincipal{
-    width: 439px;
-    max-height: 500px;
+    width: 420px;
+    height:90%;
     border: 1px solid #686868;
     box-sizing: border-box;
     border-radius: 8px;
-
-    
-}
-
-
-.CaixaScroll{
-    display: flex;
-    flex-direction: column;
+    justify-content:center;
     align-items: center;
-
-    width: 375px;
-    height: 537px;
-    overflow-y:scroll;
-    overflow-x: hidden;
-
-
+    margin-right:100px;
+    padding:30px;
+    margin-top:-50px;
 }
 
-.AdicionarIngredientes{
-    position: absolute;
-    width: 375px;
-    height: 55px;
-
-
-    background: rgba(253, 215, 14, 0.2);
+.addIngrediente{
+    height:55px;
+    width:375px;
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(253, 215, 14, 0.2);
+    justify-content:center;
+    align-items: start;
+    padding:20px;
+    overflow-y: hidden;
+    padding-left:50px;
 }
 
-.AdicionarIngredientes h3{
-    position: absolute;
-    width: 343px;
-    height: 23px;
-    margin-top: 8px;
-    margin-left: 16px;
-
+.addIngrediente .Titulo{
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 
-
-    display: flex;
-    align-items: center;
+    color: #4E4E4E;
 }
 
-.AdicionarIngredientes p{
-    position: absolute;
-    width: 343px;
-    height: 16px;
-    left: 16px;
-    top: 31px;
-
+.addIngrediente .Quantidade{
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 20px;
 
-
-
-
-
     color: #E49700;
 }
 
-.QueijoCheddar{
+.Ingredientes{
+    background: #FFFFFF;
+    margin-top: 16px;
     width: 359px;
     height: 88px;
-    background-color: #FFFFFF;
-    margin-top: 61px;
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid #E8A634;
+
 }
 
-.QueijoCheddar h3{
-    position: absolute;
-    margin-top: 8px ;
+.QueijoC{
     margin-left: 8px;
-
+    margin-top: 8px;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 
-    display: flex;
-    align-items: center;
-
-
     color: #4E4E4E;
 }
 
-.QueijoCheddar p{
-    position: absolute;
-    margin-top: 58px;
-    margin-left: 8px;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
+.ButtonC{
+    border: 1px solid #F09035;
+    border-radius: 5px;
+    width: 89px;
+    height: 32px;
 
     display: flex;
+    margin-left: 250px;
+    justify-content: center;
     align-items: center;
 
-/* Secondary/default */
-
-    color: #F09035;
 }
 
-.Linha{
-    position: absolute;
-    width: 343px;
-    height: 0px;
-    margin-top: 153px;
-
-/* Secondary/lighter */
-
-    border: 1px solid #E8A634;
-}
-
-.CebolaCrispy{
-    width: 359px;
-    height: 78px;
-    background-color: #FFFFFF;
-    margin-top: 20px;
-}
-
-.CebolaCrispy h3{
-    position: absolute;
-    margin-top: 8px ;
-    margin-left: 8px;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-
-    display: flex;
+.ButtonC .diminuir{
+    width: 14px;
+    height: 2px;
+    color: #D80000;
+    display: contents;
+    margin-right: 40px;
+    font-size: 20px;
     align-items: center;
-
-
-    color: #4E4E4E;
-}
-
-.CebolaCrispy p{
-    position: absolute;
-    margin-top: 58px;
-    margin-left: 8px;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-
-
-    display: flex;
-    align-items: center;
-
-
-
-    color: #F09035;
-}
-
-.Linha2{
-    position: absolute;
-    width: 343px;
-    height: 0px;
-    margin-top: 255px;
-
-    border: 1px solid #E8A634;
-}
-
-.MolhoCheddar{
-    width: 359px;
-    height: 78px;
-    background-color: #FFFFFF;
-    margin-top: 20px;
+    justify-content: center;
     
 }
 
-.MolhoCheddar h3{
-    position: absolute;
-    margin-top: 8px ;
-    margin-left: 8px;
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-
-    display: flex;
+.ButtonC .numero{
+    height: 100%;
+    justify-content: center;
     align-items: center;
-
-
-    color: #4E4E4E;
-}
-
-.MolhoCheddar p{
-    position: absolute;
-    margin-top: 58px;
-    margin-left: 8px;
-
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-
-
-    display: flex;
-    align-items: center;
-
-
-
-    color: #F09035;
+    margin-left: 11px;
+    margin-right: 10px;
 }
 
-.Linha3{
-    position: absolute;
-    width: 343px;
-    height: 0px;
-    margin-top: 358px;
+.ButtonC .Aumentar{
+    width: 14px;
+    height: 100%;
+    color: #D80000;
+    display: contents;
+    justify-content: center;
+    text-align: center ;
+    margin-left: 16px;
 
-    border: 1px solid #E8A634;
+    font-size: 20px;
 }
 
-.MolhoDePicanha{
-    width: 359px;
-    height: 78px;
-    background-color: #FFFFFF;
+.PrecoQ{
     margin-top: 20px;
-}
-
-.MolhoDePicanha h3{
-    position: absolute;
-    margin-top: 8px ;
     margin-left: 8px;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-
-    display: flex;
-    align-items: center;
-
-
-    color: #4E4E4E;
-}
-
-.MolhoDePicanha p{
-    position: absolute;
-    margin-top: 58px;
-    margin-left: 8px;
-
+    margin-bottom: 16px;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
 
+    color: #F09035;
+}
+
+
+.Cebola{
+    margin-left: 8px;
+    margin-top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #4E4E4E;
+}
+
+.ButtonCc{
+    border: 1px solid #F09035;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 89px;
+    height: 32px;
 
     display: flex;
+    margin-left: 250px;
+    justify-content: center;
     align-items: center;
 
 
+}
+
+.ButtonCc .diminuir{
+    width: 14px;
+    height: 2px;
+    color: #D80000;
+    display: contents;
+    margin-right: 40px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ButtonCc .numero{
+    margin-left: 11px;
+    margin-right: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.ButtonCc .Aumentar{
+    width: 14px;
+    height: 2px;
+    color: #D80000;
+    margin-top: 0px;
+    display: contents;
+
+    font-size: 20px;
+    margin-left: 62px;
+}
+
+.Ingredientes .PrecoC{
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #F09035;
+}
+.Ingredientes .MolhoC{
+    margin-left: 8px;
+    margin-top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #4E4E4E;
+}
+
+.Ingredientes .ButtonMc{
+    border: 1px solid #F09035;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 89px;
+    height: 32px;
+
+    display: flex;
+    margin-left: 250px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ButtonMc .diminuir{
+    width: 14px;
+    height: 2px;
+    color: #D80000;
+    margin-top: 0px;
+    display: contents;
+
+    font-size: 20px;
+    
+}
+
+.ButtonMc .numero{
+    margin-left: 11px;
+    margin-right: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+.ButtonMc .Aumentar{
+    width: 14px;
+    height: 2px;
+    color: #D80000;
+    margin-top: 0px;
+    display: contents;
+
+    font-size: 20px;
+    margin-left: 62px;
+}
+.Ingredientes .PrecoMc{
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
 
     color: #F09035;
 }
 
-.Linha4{
-    position: absolute;
-    width: 343px;
-    height: 0px;
-    margin-top: 460px;
+.Ingredientes .ButtonMp{
+    border: 1px solid #F09035;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 89px;
+    height: 32px;
 
-    border: 1px solid #E8A634;
+    display: flex;
+    margin-left: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonMp .diminuir{
+    width: 14px;
+    height: 2px;
+    color: #D80000;
+    margin-top: 0px;
+    display: contents;
+
+    font-size: 20px;
+    
+}
+
+.ButtonMp .numero{
+    margin-left: 11px;
+    margin-right: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.ButtonMp .Aumentar{
+    width: 14px;
+    height: 2px;
+    color: #D80000;
+    margin-top: 0px;
+    display: contents;
+
+    font-size: 20px;
+    margin-left: 62px;
+}
+
+.Ingredientes .MolhoP{
+    margin-left: 8px;
+    margin-top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #4E4E4E;
+}
+
+.Ingredientes .PrecoMp{
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #F09035;
 }
 
 .Talher{
-    margin-left: 16px;
+    margin-top: 10px;
+    padding: 20px;
     width: 375px;
     height: 55px;
-    margin-top: 23px;
-    
-    /* yellow light */
-    
+
     background: rgba(253, 215, 14, 0.2);
 }
 
-.Talher h3{
-    position: absolute;
-    margin-top: 8px ;
-    margin-left: 8px;
-
+.Pergunta{
+    width: 343;
+    height: 23px;
+    margin-left: 16px;
+    margin-top:8px;
+    
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 
-    display: flex;
-    align-items: center;
+    color: #4E4E4E;
+}
 
+.Resposta{
+    width: 343px;
+    height: 23px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Resposta text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
 
     color: #4E4E4E;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.Sim text {
+    margin-right:256px;
+}
+.Nao text{
+    margin-right:255px;
+
+}
+.CaixaScroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:50px;
+    width: 375px;
+    max-height: 450px;
+    overflow-y:auto;
+    overflow-x:hidden
 }
 
 .Add{
@@ -318,7 +422,7 @@
     border-radius: 4px;
 }
 
-.diminuir{
+.diminuir2{
     background-color: #FFFFFF;
     color: #ED3237;
     position: absolute;
@@ -350,7 +454,7 @@
 
 }
 
-.Aumentar{
+.Aumentar2{
     background-color: #FFFFFF;
     font-size: 14px;
     color: #ED3237;
@@ -366,6 +470,9 @@
 
 .Finalizar{
     display: flex;
+    bottom:0;
+    justify-content:center;
+    align-items: center;
 }
 
 .Add2 button{
@@ -379,6 +486,48 @@
     border: 0;
 }
 
-.Escolha p {
+@media screen and (max-width:375px) {
+    .MenuPrincipal{
+        border: 0;
+        margin-top: 0px;
 
+    }
+    .CaixaScroll{
+        width: 375px;
+        margin-left: -35px;
+    }
+    .addIngrediente{
+        width: 343px;
+        height: 55px;
+        margin-left:2px;
+    }
+    .Ingredientes{
+        width: 343px;
+        height: 88px;
+    }
+
+    .Aumentar{
+        max-height: 100%;
+    }
+
+    .diminuir{
+        max-height: 100%;
+    }
+
+    .Finalizar{
+        width: 375px;
+        display: flex;
+        margin-left: -75px;
+    
+    }
+    .Add{
+        width: 140px;
+        height: 40px;
+        margin-right:-10px;   
+    }
+    .Add2{
+        width: 140px;
+        height: 40px;
+        margin:0;
+    }
 }
