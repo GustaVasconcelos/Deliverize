@@ -6,6 +6,7 @@ import Vector2 from '../../assets/Vector2.svg'
 import Radio from '@material-ui/core/Radio';
 
 
+
 export default function MenuView() {
 
     const [chedar, setChedar] = useState(0);
@@ -23,6 +24,7 @@ export default function MenuView() {
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
     }
+
 
     return (
         <div className="MenuPrincipal">
@@ -99,7 +101,7 @@ export default function MenuView() {
                     <div className="Sim">
                         <text> <text>Sim</text>
                             <Radio
-                                
+                                placeholder="texto"
                                 checked={selectedValue === 'a'}
                                 onChange={handleChange}
                                 value="a"
@@ -108,6 +110,7 @@ export default function MenuView() {
                             /></text>
                         <text className="Nao"><text>Não</text>
                             <Radio
+                                placeholder="texto"
                                 checked={selectedValue === 'b'}
                                 onChange={handleChange}
                                 value="b"
